@@ -14,8 +14,8 @@
         <columns>
           <TableColumn fx:id="idTareaColumna" prefWidth="107.80001068115234" text="ID" />
           <TableColumn fx:id="nombreTareaColumna" prefWidth="81.0" text="Tarea" />
-            <TableColumn fx:id="responsabelTareaColumna" prefWidth="150.79998779296875" text="Responsable" />
-            <TableColumn fx:id="estatusTareaColumna" minWidth="0.0" prefWidth="113.00003051757812" text="Estatus" />
+            <TableColumn fx:id="responsableColumna" prefWidth="150.79998779296875" text="Responsable" />
+            <TableColumn fx:id="estatusColumna" minWidth="0.0" prefWidth="113.00003051757812" text="Estatus" />
         </columns>
       </TableView>
    </children>

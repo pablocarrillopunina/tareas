@@ -51,6 +51,9 @@ public class IndexControlador implements Initializable {
         tareaTabla.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         configurarColumnas();
 
+        //metodo para listar tareas
+        listarTareas();
+
 
     }
 
@@ -59,5 +62,12 @@ public class IndexControlador implements Initializable {
         nombreTareaColumna.setCellValueFactory(new PropertyValueFactory<>("nombreTarea"));
         responsableColumna.setCellValueFactory(new PropertyValueFactory<>("responsable"));
         estatusColumna.setCellValueFactory(new PropertyValueFactory<>("estatus"));
+    }
+
+    public void listarTareas(){
+        logger.info("Ejecutando estando de tareas");
+        tareaList.clear();
+        tareaList.addAll(tareaServicio.listarTareas());
+        tareaTabla.setItems(tareaList);
     }
 }
