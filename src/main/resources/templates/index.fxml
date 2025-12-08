@@ -40,7 +40,7 @@
       <AnchorPane layoutX="39.0" layoutY="333.0" onMouseClicked="#cargarTareaFormulario" prefHeight="134.0" prefWidth="802.0">
          <children>
             <Button fx:id="agregarBoton" layoutX="54.0" layoutY="53.0" mnemonicParsing="false" onAction="#agregarTarea" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #1d3557;" text="Agregar" textFill="#f1faee" />
-            <Button fx:id="modificarBoton" layoutX="224.0" layoutY="53.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #1d3557;" text="Modificar" textFill="#f1faee" />
+            <Button fx:id="modificarBoton" layoutX="224.0" layoutY="53.0" mnemonicParsing="false" onAction="#modificarTarea" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #1d3557;" text="Modificar" textFill="#f1faee" />
             <Button fx:id="eliminarBoton" layoutX="401.0" layoutY="53.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #e63946;" text="Eliminar" textFill="#f1faee" />
             <Button fx:id="limpiarBoton" layoutX="557.0" layoutY="54.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: #ffd60a;" text="Limpiar Forumulario" />
          </children></AnchorPane>
