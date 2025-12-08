@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="489.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pablocarrillo.tareas.controlador.IndexControlador">
    <children>
-      <TableView fx:id="tareaTabla" layoutX="305.0" layoutY="63.0" prefHeight="236.0" prefWidth="536.0">
+      <TableView fx:id="tareaTabla" layoutX="305.0" layoutY="63.0" onMouseClicked="#cargarTareaFormulario" prefHeight="236.0" prefWidth="536.0">
         <columns>
           <TableColumn fx:id="idTareaColumna" prefWidth="66.79998779296875" text="ID" />
           <TableColumn fx:id="nombreTareaColumna" prefWidth="159.59994506835938" text="Tarea" />
@@ -37,7 +37,7 @@
             <TextField fx:id="estatusTexto" layoutX="14.0" layoutY="185.0" prefHeight="26.0" prefWidth="222.0" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="39.0" layoutY="333.0" prefHeight="134.0" prefWidth="802.0">
+      <AnchorPane layoutX="39.0" layoutY="333.0" onMouseClicked="#cargarTareaFormulario" prefHeight="134.0" prefWidth="802.0">
          <children>
             <Button fx:id="agregarBoton" layoutX="54.0" layoutY="53.0" mnemonicParsing="false" onAction="#agregarTarea" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #1d3557;" text="Agregar" textFill="#f1faee" />
             <Button fx:id="modificarBoton" layoutX="224.0" layoutY="53.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #1d3557;" text="Modificar" textFill="#f1faee" />

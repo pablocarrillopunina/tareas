@@ -53,6 +53,8 @@ public class IndexControlador implements Initializable {
     @FXML
     private TextField estatusTexto;
 
+
+    private Integer idTareaInterno;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         tareaTabla.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
@@ -92,6 +94,16 @@ public class IndexControlador implements Initializable {
             mostrarMensaje("Informacion", "Tarea agregada");
             limpiarFormulario();
             listarTareas();
+        }
+    }
+
+    public void cargarTareaFormulario(){
+        var tarea = tareaTabla.getSelectionModel().getSelectedItem();
+        if (tarea != null){
+            idTareaInterno = tarea.getIdTarea();
+            nombreTareaTexto.setText(tarea.getNombreTarea());
+            responsableTexto.setText(tarea.getResponsable());
+            estatusTexto.setText(tarea.getEstatus());
         }
     }
 
